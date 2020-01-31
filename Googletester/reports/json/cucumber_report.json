@@ -1,0 +1,85 @@
+[
+  {
+    "description": "    As a user of Protractor\n    I should be able to use Cucumber\n    In Order to test run",
+    "keyword": "Feature",
+    "name": "Running Cucumber with Protractor",
+    "line": 2,
+    "id": "running-cucumber-with-protractor",
+    "tags": [],
+    "uri": "features\\googleTest.feature",
+    "elements": [
+      {
+        "id": "running-cucumber-with-protractor;protractor-and-cucumber-test",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Protractor and Cucumber Test",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to Google Home Page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\googleTest.step.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Google Home Page is loaded",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\googleTest.step.js:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 32000000,
+              "error_message": "Error: Error while waiting for Protractor to sync with the page: \"both angularJS testability and angular testability are undefined.  This could be either because this is a non-angular page or because your test involves client-side navigation, which can interfere with Protractor's bootstrapping.  See http://git.io/v4gXM for details\"\n    at runWaitForAngularScript.then (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\protractor\\built\\browser.js:463:23)\n    at ManagedPromise.invokeCallback_ (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)\nFrom: Task: <anonymous>\n    at pollCondition (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2195:19)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2191:7\n    at new ManagedPromise (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2190:22\n    at TaskQueue.execute_ (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\nFrom: Task: safeClick: By(css selector, /html/body/div/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input) is not present within 20000 ms\n    at scheduleWait (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2188:20)\n    at ControlFlow.wait (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\promise.js:2517:12)\n    at thenableWebDriverProxy.wait (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\selenium-webdriver\\lib\\webdriver.js:934:29)\n    at run (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\protractor\\built\\browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (D:\\Workspace\\Learning\\Protractor\\Googletester\\node_modules\\protractor\\built\\browser.js:67:16)\n    at GoogleSearchPageObject.<anonymous> (D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\pages\\GoogleSearchPageObject.js:22:40)\n    at Generator.next (<anonymous>)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\pages\\GoogleSearchPageObject.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\pages\\GoogleSearchPageObject.js:4:12)\n    at GoogleSearchPageObject.ValidateGoogleHomePage (D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\pages\\GoogleSearchPageObject.js:21:16)\n    at World.<anonymous> (D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\stepdefinitions\\googleTest.step.js:26:57)\n    at Generator.next (<anonymous>)\n    at D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\stepdefinitions\\googleTest.step.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (D:\\Workspace\\Learning\\Protractor\\Googletester\\typeScript\\stepdefinitions\\googleTest.step.js:4:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click on search input and enter \"Protractor\"",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\googleTest.step.js:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see all the search results for \"Protractor\"",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\googleTest.step.js:34"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
