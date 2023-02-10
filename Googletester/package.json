@@ -39,7 +39,7 @@
     "cucumber": "^5.0.2",
     "cucumber-html-reporter": "^4.0.3",
     "cucumber-junit": "^1.7.1",
-    "find-chrome-version": "^1.0.2",
+    "find-chrome-version": "^1.1.0",
     "fkill-cli": "^5.2.0",
     "protractor": "^5.4.2",
     "protractor-cucumber-framework": "^6.1.3",
